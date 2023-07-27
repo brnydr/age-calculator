@@ -16,11 +16,11 @@ export default class AgeCalcuator {
    return planetAge.toFixed(2);
  };
 
- calculateYearsPassed(pastAge, planet) {
-  let yearsPassed = this.age - pastAge;
-  let planetYearsPassed = yearsPassed * this.planetYears[planet];
-  return planetYearsPassed.toFixed(2);
-  
- }
+  calculateYearsPassed(pastAge, planet) {
+    let yearsPassed = this.age - pastAge;
+    let planetYearsPassed = yearsPassed * this.planetYears[planet];
+    return planetYearsPassed.toFixed(2);
+    
+  }
 
 };
