@@ -16,13 +16,16 @@ export default class AgeCalcuator {
    return planetAge.toFixed(2);
  };
 
-  calculateYearsPassed(pastAge, planet) {
-    let planetYearsPassed = (this.age - pastAge) / this.planetYears[planet];
-    return planetYearsPassed.toFixed(2);
-    
+  calculateYearsPassed(otherAge, planet) {
+    if (otherAge > this.age) {
+      let planetYearsPassed = (otherAge - this.age) / this.planetYears[planet];
+      return planetYearsPassed.toFixed(2);
+    } else if (otherAge < this.age) {
+      let planetYearsPassed = (this.age - otherAge) / this.planetYears[planet];
+      return planetYearsPassed.toFixed(2);
+    } else if (otherAge === this.age) {
+      return "0";
+    }
   }
 
-  calculateYearsUntil(futureAge, planet) {
-   
-  }
 };
