@@ -1,5 +1,6 @@
 
 export default class AgeCalcuator {
-  constructor() {
+  constructor(age) {
+    this.age = age;
   };
  };
