@@ -16,7 +16,7 @@ beforeEach(() => {
     expect(newAgeCalculator.planetYears.mercury).toEqual(.24);
   });
 
-  test("should correctly calculate the age of a person in Mercury years", () => {
+  test("should correctly calculate the age of a person depending on planet inputted", () => {
     expect(newAgeCalculator.calculatePlanetAge("mercury")).toEqual("154.17");
     expect(newAgeCalculator.calculatePlanetAge("venus")).toEqual("59.68");
     expect(newAgeCalculator.calculatePlanetAge("earth")).toEqual("37.00");
