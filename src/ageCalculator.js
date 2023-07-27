@@ -12,7 +12,7 @@ export default class AgeCalcuator {
   };
 
   calculatePlanetAge(planet) {
-   let planetAge = this.age * this.planetYears[planet];
+   let planetAge = this.age / this.planetYears[planet];
    return planetAge.toFixed(2);
  };
 
@@ -23,4 +23,7 @@ export default class AgeCalcuator {
     
   }
 
+  calculateYearsUntil(futureAge, planet) {
+   
+  }
 };
