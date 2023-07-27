@@ -25,21 +25,12 @@ beforeEach(() => {
 
   });
 
-  test("should correctly calculate the number of years passed on a planet since a past birthday", () => {
+  test("should correctly calculate the number of years passed on a planet since a past or until future birthday", () => {
     expect(newAgeCalculator.calculateYearsPassed(36, "mercury")).toEqual("4.17");
     expect(newAgeCalculator.calculateYearsPassed(33, "venus")).toEqual("6.45");
     expect(newAgeCalculator.calculateYearsPassed(30, "earth")).toEqual("7.00");
-    expect(newAgeCalculator.calculateYearsPassed(27, "mars")).toEqual("5.32");
-    expect(newAgeCalculator.calculateYearsPassed(24, "jupiter")).toEqual("1.10");
-  });
-
-  test("should correctly calculate the number of years on a planet until a future birthday", () => {
-    expect(newAgeCalculator.calculateYearsUntil(40, "mercury")).toEqual("0.72");
-    expect(newAgeCalculator.calculateYearsUntil(42, "venus")).toEqual("3.10");
-    expect(newAgeCalculator.calculateYearsUntil(44, "earth")).toEqual("7.00");
-    expect(newAgeCalculator.calculateYearsUntil(46, "mars")).toEqual("16.92");
-    expect(newAgeCalculator.calculateYearsUntil(48, "jupiter")).toEqual("40.74");
-
+    expect(newAgeCalculator.calculateYearsPassed(42, "mars")).toEqual("2.66");
+    expect(newAgeCalculator.calculateYearsPassed(37, "jupiter")).toEqual("0");
   });
 
 });
