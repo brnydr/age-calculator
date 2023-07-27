@@ -1,8 +1,20 @@
 import AgeCalculator from ".././src/ageCalculator.js";
 
 describe("AgeCalculator", () => {
+  let newAgeCalculator;
+
+beforeEach(() => {
+  newAgeCalculator = new AgeCalculator(37);
+  return newAgeCalculator;
+});
+
   test("should correctly create an AgeCalculator object with an age property", () => {
-    const newAgeCalculator = new AgeCalculator(37);
     expect(newAgeCalculator.age).toEqual(37);
   });
+
+  test("should correctly create an AgeCalculator object with a age property and planet years property", () => {
+    expect(newAgeCalculator.planetYears.mercury).toEqual(.24);
+  });
+
+ 
 });
