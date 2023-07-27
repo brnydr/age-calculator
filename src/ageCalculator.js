@@ -5,6 +5,7 @@ export default class AgeCalcuator {
     this.planetYears = {
       "mercury": .24,
       "venus": .62,
+      "earth": 1,
       "mars": 1.88,
       "jupiter": 11.86
     };
@@ -14,4 +15,9 @@ export default class AgeCalcuator {
    let planetAge = this.age * this.planetYears[planet];
    return planetAge.toFixed(2);
  };
+
+ calculateYearsPassed(pastAge, planet) {
+
+ }
+
 };
