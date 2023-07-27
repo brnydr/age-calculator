@@ -25,5 +25,12 @@ beforeEach(() => {
 
   });
 
- 
+  test("should correctly calculate the number of years passed on a planet since a past birthday", () => {
+    expect(newAgeCalculator.calculateYearsPassed(36, "mercury")).toEqual("0.24");
+    expect(newAgeCalculator.calculateYearsPassed(33, "venus")).toEqual("2.48");
+    expect(newAgeCalculator.calculateYearsPassed(30, "earth")).toEqual("7.00");
+    expect(newAgeCalculator.calculateYearsPassed(27, "mars")).toEqual("18.80");
+    expect(newAgeCalculator.calculateYearsPassed(24, "jupiter")).toEqual("154.18");
+  });
+
 });
