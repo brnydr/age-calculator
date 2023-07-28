@@ -1,3 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&family=Handjet:wght@300&family=Press+Start+2P&family=Rubik+Moonrocks&family=Victor+Mono:ital@1&display=swap');
+body {
+  background-color: #f5f7f9; /* light peach */
+}
+
+form {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #ffb74d; /* light orange */
+}
+
+input, button {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Codystar';
+  font-weight: 400;
+  font-size: 65px;
+  animation: twinkle 2s infinite;
+  animation-delay: random(0, 2s);
+}
+
 .hidden {
   display: none;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+input {
+  font-family: 'Handjet';
+  font-size: 20px;
+  width: 300px;
+}
+
+button {
+  font-family: Victor Mono
+
 }
