@@ -7,6 +7,36 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <h1>Enter your age to get planetary age stuff</h1>
+  <form id="ageForm">
+    <input type="number" id="age" name="age" placeholder="Enter your age">
+    <input type="number" id="pastAge" name="pastAge" placeholder="Enter a past age">
+    <input type="number" id="futureAge" name="futureAge" placeholder="Enter a future age">
+    <button type="submit">Submit</button>
+  </form>
+  <div id="ageOutput" class="hidden">
+    <h2>Your planetary ages:</h2>
+    <p>Mercury: <span id="mercuryAge"></span></p>
+    <p>Venus: <span id="venusAge"></span></p>
+    <p>Earth:<span id="earthAge"</span></p>
+    <p>Mars: <span id="marsAge"></span></p>
+    <p>Jupiter: <span id="jupiterAge"></span></p>
+  </div>
+  <div id="inThePast" class="hidden">
+    <h2>How long it's been since you were <span id="pastAge"></span></h2>
+    <p>Mercury: <span id="mercuryPast"></span></p>
+    <p>Venus: <span id="venusPast"></span></p>
+    <p>Earth: <span id=earthPast"></span></p>
+    <p>Mars: <span id="marsPast"></span></p>
+    <p>Jupiter: <span id="jupiterPast"></span></p>
+  </div>
+  <div id="inTheFuture" class="hidden">
+    <h2>How long it will take to get to <span id="futureAge"></span></h2>
+    <p>Mercury: <span id="mercuryFuture"></span></p>
+    <p>Venus: <span id="venusFuture"></span></p>
+    <p>Earth: <span id="earthFuture"></span></p>
+    <p>Mars: <span id="marsFuture"></span></p>
+    <p>Jupiter: <span id="jupiterFuture"></span></p>
+  </div>
 </body>
 </html>
