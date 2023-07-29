@@ -1,8 +1,8 @@
-# Webpack Development Template
+# Super Galactic Age Calculator
 
 #### By _**Brian Yoder**_
 
-#### _A application template using webpack, eslint, babel, jest, and other packages._
+#### _An application that takes a user's age, a future age, and a past age, and calculates how many planetary years will or have passed._
 
 ## Technologies Used
 
@@ -19,23 +19,20 @@
 
 * Open Terminal/Command line
 * Navigate to the desktop by typing **cd ~/Desktop** and press Enter on the keybord
-* type **git clone https://github.com/brnydr/webpack-template** into the terminal and press Enter on the keyboard
-* Navigate to the top level of the directory by typing **cd webpack-template** and press Enter on the keyboard
+* type **git clone https://github.com/brnydr/age-calculator** into the terminal and press Enter on the keyboard
+* Navigate to the top level of the directory by typing **cd age-calculator** and press Enter on the keyboard
 * type **code .** into the terminal and press Enter on the keyboard
 * Open the terminal in VSCode by pressing **Ctrl + `** on the keyboard
-
 * type **npm install** into the terminal and press Enter on the keyboard
 * type **npm run build** into the terminal and press Enter on the keyboard
 * type **npm run start** into the terminal and press Enter on the keyboard
-* Delete all boilerplate content in index.html, index.js, package.json and test files to customize for your project. 
-* Open a web browser and navigate to **localhost:8080**
-* When ready to run tests, type **npm run test** into the terminal and press Enter on the keyboard (no tests exist at installation)
-
+* When ready to run tests, type **npm run test** into the terminal and press Enter on the keyboard 
 
 
 ## Known Bugs
 
-* None (yet)
+* Any age can be input into the UI
+* Multiple reset buttons are added to the DOM when submit is clicked. 
 
 ## [License](https://mit-license.org/)
 
