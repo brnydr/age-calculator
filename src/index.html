@@ -7,7 +7,7 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Let's figure out how old you are elsewhere and cosmically</h1>
+  <h1>Let's put things in perspective</h1>
   <form id="ageForm">
     <input type="number" id="age" name="age" placeholder="Enter your age">
     <br>
@@ -17,29 +17,32 @@
     <br>
     <button type="submit">Submit</button>
   </form>
-  <div id="ageOutput" class="hidden">
-    <h2>Your planetary ages:</h2>
-    <p>Mercury: <span id="mercuryAge"></span></p>
-    <p>Venus: <span id="venusAge"></span></p>
-    <p>Earth:<span id="earthAge"</span></p>
-    <p>Mars: <span id="marsAge"></span></p>
-    <p>Jupiter: <span id="jupiterAge"></span></p>
-  </div>
-  <div id="inThePast" class="hidden">
-    <h2>How long it's been since you were <span id="pastAge"></span></h2>
-    <p>Mercury: <span id="mercuryPast"></span></p>
-    <p>Venus: <span id="venusPast"></span></p>
-    <p>Earth: <span id=earthPast"></span></p>
-    <p>Mars: <span id="marsPast"></span></p>
-    <p>Jupiter: <span id="jupiterPast"></span></p>
-  </div>
-  <div id="inTheFuture" class="hidden">
-    <h2>How long it will take to get to <span id="futureAge"></span></h2>
-    <p>Mercury: <span id="mercuryFuture"></span></p>
-    <p>Venus: <span id="venusFuture"></span></p>
-    <p>Earth: <span id="earthFuture"></span></p>
-    <p>Mars: <span id="marsFuture"></span></p>
-    <p>Jupiter: <span id="jupiterFuture"></span></p>
-  </div>
+  <br>
+  <div id="result" class="hidden">
+    <div id="mercuryResult" >
+      <img src="./assets:imgs/mercury.png" alt="mercury">
+      <p>Your age in mercury years:<span id="mercuryAge"></span></p>
+      <p><span id="mercuryPast"></span> mercury years have past since you were <span id="pastAge"></span></p>
+      <p><span id="mercuryFuture"></span> mercury years will pass until you are <span id="futureAge"></span></p>
+    </div>
+    <div id="venusResult">
+      <img src="./assets:imgs/venus.png" alt="venus">
+      <p>Your age in venus years:<span id="venusAge"></span></p>
+      <p><span id="venusPast"></span> venus years have past since you were <span id="pastAge"></span></p>
+      <p><span id="venusFuture"></span> venus years will pass until you are <span id="futureAge"></span></p>
+    </div>
+    <div id="marsResult">
+      <img src="./assets:imgs/mars.png" alt="mars">
+      <p>Your age in mars years:<span id="marsAge"></span></p>
+      <p><span id="marsPast"></span> mars years have past since you were <span id="pastAge"></span></p>
+      <p><span id="marsFuture"></span> mars years will pass until you are <span id="futureAge"></span></p>
+    </div>
+    <div id="jupiterResult">
+      <img src="./assets:imgs/jupiter.png" alt="jupiter">
+      <p>Your age in jupiter years:<span id="jupiterAge"></span></p>
+      <p><span id="jupiterPast"></span> jupiter years have past since you were <span id="pastAge"></span></p>
+      <p><span id="jupiterFuture"></span> jupiter years will pass until you are <span id="futureAge"></span></p>
+    </div>
+  </div>  
 </body>
 </html>

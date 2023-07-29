@@ -23,18 +23,32 @@ h1 {
   font-size: 65px;
   animation: twinkle 2s infinite;
   animation-delay: random(0, 2s);
+  -webkit-box-shadow: 0 0 10px #F5F7F9;
+  -moz-box-shadow: 0 0 10px #F5F7F9;
+  box-shadow: 0 0 10px #F5F7F9;
+
 }
 
-.hidden {
-  display: none;
+i {
+  background-color: #FFF; /* white */
+  -webkit-box-shadow: 0 0 10px #F5F7F9 inset;
+  -moz-box-shadow: 0 0 10px #F5F7F9 inset;
+  box-shadow: 0 0 10px #F5F7F9 inset;
 }
+
 
 @keyframes twinkle {
   0% {
     opacity: 1;
   }
   50% {
-    opacity: 0.5;
+    opacity: .25;
+  }
+  75% {
+    opacity: .5;
+  }
+  90% {
+    opacity: .75;
   }
   100% {
     opacity: 1;
@@ -50,4 +64,21 @@ input {
 button {
   font-family: Victor Mono
 
+}
+
+img {
+  
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+#result {
+  display: flex;
+  justify-content: center;
+  font-family: Handjet;
+}
+
+.hidden {
+  visibility: hidden;
 }
