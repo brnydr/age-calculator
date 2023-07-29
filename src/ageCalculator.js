@@ -1,5 +1,4 @@
-
-export default class AgeCalcuator {
+export class AgeCalculator {
   constructor(age) {
     this.age = age;
     this.planetYears = {
@@ -9,12 +8,12 @@ export default class AgeCalcuator {
       "mars": 1.88,
       "jupiter": 11.86
     };
-  };
+  }
 
   calculatePlanetAge(planet) {
    let planetAge = this.age / this.planetYears[planet];
    return planetAge.toFixed(2);
- };
+ }
 
   calculateYearsPassed(otherAge, planet) {
     if (otherAge > this.age) {
@@ -28,4 +27,4 @@ export default class AgeCalcuator {
     }
   }
 
-};
+}
