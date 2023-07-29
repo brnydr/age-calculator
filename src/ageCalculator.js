@@ -26,5 +26,4 @@ export class AgeCalculator {
       return "0";
     }
   }
-
 }
